@@ -41,7 +41,7 @@
 <header>
     <h1>Zeliha Ural Merpez</h1>
     <p class="contact-info">
-        Email: zelihamerpez@gmail.com | Phone: (778) 939-7183 | Webpage: <a href="zmerpez.github.io" target="_blank" title="Go to Personal website"> zmerpez.github.io</a>  |<a href="https://www.linkedin.com/in/zeliha-ural-merpez-b3b79836/" target="_blank" title="Go to LinkedIn website">LinkedIn:</a>  
+        <a href='mailto:zelihamerpez@gmail.com'>Email: zelihamerpez@gmail.com </a> | Phone: (778) 939-7183 | Webpage: <a href="zmerpez.github.io" target="_blank" title="Go to Personal website"> zmerpez.github.io</a>  |<a href="https://www.linkedin.com/in/zeliha-ural-merpez-b3b79836/" target="_blank" title="Go to LinkedIn website">  LinkedIn:</a>  
     </p>
 </header>
 
@@ -106,10 +106,24 @@
 
 <section class="projects">
     <h2>Projects</h2>
+    <h3> Evaluating Five Time Series Methods to Predict Stock Prices </h3>
+    <p>
+        <a href='https://github.com/zmerpez/StockVision/blob/main/Time_Series_Stock_Prediction.ipynb' target='_blank' title='Check Project'>github</a>
+        - The goal was to predict next-day stock prices using historical stock data, with the project assessing how each model could handle stock price fluctuations, trends, seasonality, and market events.
+        <li> Models tested: ARIMA, ETS, LSTM, Facebook Prophet, Random Forest Regression. </li>
+        <li> Hyperparameter Tuning of ARIMA: Enhanced model accuracy by reducing the average MSE score from 611 to 21 through optimal hyperparameter selection.</li>
+        <li> Advanced models like LSTM and Random Forest outperformed traditional methods in capturing complex patterns. Hyperparameter tuning of ARIMA yield stronger performence than ETS and FB Prophet default models. </li>
+
+
+    </p>
+
     <h3>Optimizing Stock Trading Decisions: Utilizing Agent-Based Models and Historical Data for Buy/Sell Predictions</h3>
-    <p> <a href="https://colab.research.google.com/drive/1lGavfEyhhTl8LqAHQucqfJ8KT0Q3HwEO" target="_blank" title="Check project">colab.research.google</a>
+    <p> <a href="https://github.com/zmerpez/StockVision/blob/main/Stock_Prediction_Agents.ipynb" target="_blank" title="Check project">github</a>
         
         This project focuses on optimizing stock trading decisions by utilizing agent-based models alongside historical data to predict buy and sell opportunities. By simulating market behaviors, it aims to enhance predictive accuracy and improve investment strategies in a dynamic trading environment. </p>
+        <li> Agent-based modeling simulates the actions and interactions of individual traders (agents) in the market. By incorporating historical data, we can create realistic trading scenarios that reflect past market behavior. Our project explores the performance of two different trading agents, each with unique strategies for making buy and sell decisions based on historical stock price movements. </li>
+        <li>We optimized expected return thresholds through several methods: first, by applying a consistent unique constant across all symbols; second, by deriving firm-specific values directly from the data. Lastly, we combined these scores after normalizing the data into a formula, represented as 𝑎∗𝑥+𝑏 to enhance decision-making processes. Solved the equation to maximize the agents final portfolio values.</li>
+        <li> The maximum final portfolio values for a $10,000 investment over 3 years were $28,555 for the slow agent and $41,750 for the fast agent, resulting in a performance improvement of approximately 46.2% for the fast agent.</li>
     <h3>Comic Book Character Alignment Predictor</h3>
     <p> <a href="https://github.com/UBC-MDS/Workflows_showcase" target="_blank" title="Check project">github</a>
         
