@@ -36,8 +36,8 @@ Find out More Awesome template at http://www.WpFreeware.com.
 				</div>
 				<div class="mainmenu floatright">
 					<ul id="nav">
-						<li><a href="index.html" class="active">Project1</a></li>
-						<li><a href="index1.html" >Project2</a></li>
+						<li><a href="index.html" >Project1</a></li>
+						<li><a href="index1.html" class="active">Project2</a></li>
 						<li><a href="resume.html" target="_blank">About Me</a></li>
 						<li><a href="stock_history.html" target="_blank">Data</a></li>
 						<li><a href="https://github.com/zmerpez/StockVision/blob/main/Stock_Prediction_Agents.ipynb" target="_blank" title="Check project">P1 CODE</a></li>
@@ -56,51 +56,53 @@ Find out More Awesome template at http://www.WpFreeware.com.
                 <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
 						<li>
-                            <img src="images/slider.jpg" alt="image06"/>
-                            <div class="ei-title">
-                                <h2>Unlocking INSIGHTS</h2>
-                            </div>
+							<img src="images/slider.jpg" alt="image06"/>
+							<div class="ei-title">
+								<h2>Model Comparison</h2>
+							</div>
+						</li>
+						<li>
+								<img src="images/large/3.jpg" alt="image03"/>
+								<div class="ei-title">
+									<h2>ARIMA, LSTM, Random Forest</h2>
+									<h3>ETS, FB Prophet</h3>
+								</div>
+						</li>
+						
+						<li>
+							<img src="images/pr2_1.png" alt="image06"/>
+							<div class="ei-title">
+									<h3>MAE</h3>
+							</div>
                         </li>
                         <li>
-                            <img src="images/large/1.jpg" alt="image01" />
-                            <div class="ei-title">
-                                <h2>Innovating for Tomorrow</h2>
-                            </div>
+							<img src="images/pr2_2.png" alt="image01" />
+							<div class="ei-title">
+									<h3>MSE</h3>
+							</div>
                         </li>
                         <li>
-                            <img src="images/large/2.jpg" alt="image02" />
-                            <div class="ei-title">
-                                <h2>Quest for</h2>
-                                <h3>Knowledge</h3>
-                            </div>
+							<img src="images/pr2_3.png" alt="image02" />
+							<div class="ei-title">
+									<h3>RMSE</h3>
+							</div>
                         </li>
                         <li>
-                            <img src="images/large/3.jpg" alt="image03"/>
-                            <div class="ei-title">
-                                <h2>Power of</h2>
-                                <h3>Analytics</h3>
-                            </div>
+							<img src="images/pr2_4.png" alt="image03"/>
+							<div class="ei-title">
+									<h3>MAPE</h3>
+							</div>
+
                         </li>
                         <li>
-                            <img src="images/large/4.jpg" alt="image04"/>
-                            <div class="ei-title">
-                                <h2>Building</h2>
-                                <h3>Solutions</h3>
-                            </div>
+							<img src="images/large/4.jpg" alt="image04"/>
+							<div class="ei-title">
+									<h2>Hyperparameter Tuning</h2>
+							</div>
+
+
                         </li>
-                        <li>
-                            <img src="images/large/5.jpg" alt="image05"/>
-                            <div class="ei-title">
-                                <h3>Navigating Complexity</h3>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/large/7.jpg" alt="image07"/>
-                            <div class="ei-title">
-                                <h2>Transforming Data</h2>
-                                <h3 style="margin-top: 80px;">Into Action</h3>
-                            </div>
-                        </li>
+
                     </ul><!-- ei-slider-large -->
                     <ul class="ei-slider-thumbs">
                         <li class="ei-slider-element">Current</li>
@@ -120,19 +122,44 @@ Find out More Awesome template at http://www.WpFreeware.com.
 			<div class="fix service_area">
 				<div class="fix single_service_container">
 					<div class="fix single_service portfolio floatleft">
-						<h2>Optimizing Stock Trading Decisions</h2>
-						<p>In today's fast-paced financial markets, making informed stock trading decisions is crucial for maximizing returns and minimizing risks. This project aims to enhance trading strategies by utilizing agent-based models and analyzing historical stock data. The goal is to predict optimal buy and sell actions for stocks, helping traders make better decisions.</p>
+						<h2>Evaluating Five Time Series Methods to Predict Stock Prices</h2>
+						<p>The goal was to predict next-day stock prices using historical stock data, with the project assessing how each model could handle stock price fluctuations, trends, seasonality, and market events.</p>
+						<p>Models</p>
+						<li>1. ARIMA (AutoRegressive Integrated Moving Average)</li>
+						<li>2. ETS (Exponential Smoothing)</li>
+						<li>3. LSTM (Long Short-Term Memory Networks)</li>
+						<li>4. Facebook Prophet</li>
+						<li>5. Random Forest Regression</li>
+
 					</div>
 					<div class="fix single_service offer floatleft">
-						<h2>Reasoning</h2>
-						<p>Agent-based modeling simulates the actions and interactions of individual traders (agents) in the market. By incorporating historical data, we can create realistic trading scenarios that reflect past market behavior. Our project explores the performance of two different trading agents, each with unique strategies for making buy and sell decisions based on historical stock price movements.
+						<h2>Model Details</h2>
+						<p>
+								
+							ARIMA: A classical statistical model effective for univariate time series data exhibiting stationarity or trends. ARIMA is well-suited for modeling linear relationships and capturing short-term dependencies in stock prices.
+						</p>
+						<p>	
+							ETS: A smoothing technique that models level, trend, and seasonality in data. It is particularly useful when the data exhibits consistent seasonal patterns, providing robust predictions for time series with cyclical or irregular fluctuations.
+						</p>
+						<p>	
+							LSTM: A type of recurrent neural network (RNN) that excels in capturing long-term dependencies in sequential data. LSTM is ideal for modeling stock prices with complex, nonlinear relationships and can identify temporal patterns that traditional methods might miss.
+						</p>
+						<p>	
+							Prophet: A forecasting tool developed by Facebook, designed for time series data with strong seasonal effects and holidays. Prophet is highly flexible and can accommodate non-linear trends and external factors, making it a good choice for stock prices influenced by market events or seasonal patterns.
+						</p>
+						<p>
+							Random Forest: An ensemble learning method based on decision trees, Random Forest can be adapted for time series forecasting by using lagged features and external variables as inputs. It is particularly useful for modeling non-linear relationships and capturing interactions between different predictors, providing robust forecasts even with noisy data.
 
-							The strategies employed by the agents were designed to capitalize on market trends, reacting to price changes and volume data. By comparing the performance of these agents, we aim to identify which strategies yield the best results in terms of portfolio growth over time.</p>
+						</p>
 					</div>
 					<div class="fix single_service follow floatleft">
 						<h2>Results</h2>
-						<p>Our analysis produced several key findings, which are visually represented in the project 1 code section above. Results demonstrate the effectiveness of the agents' strategies in managing a stock portfolio formed by 10 different firms.
-							The results of our project indicate that agent-based models can significantly enhance stock trading strategies. By simulating various trading actions and analyzing historical data, we identified effective buy and sell strategies that lead to improved portfolio performance. These insights provide valuable guidance for traders looking to optimize their stock trading decisions in real-world markets.
+						<p>Our analysis produced several key findings, which are visually represented in the project 2 code section above. Advanced models like LSTM and Random Forest outperformed traditional methods in capturing complex patterns.
+						<p> Hyperparameter Tuning of ARIMA: Enhanced model accuracy by reducing the average MSE score from 611 to 21 through optimal hyperparameter selection.
+							Hyperparameter tuning of ARIMA yield stronger performence than ETS and FB Prophet default models. 
+						</p>
+						<p>
+							The top-performing models based on MSE are LSTM, ARIMA with updated parameters (5, 2, 0), and Random Forest Regression. Depending on the specific use case, one can choose to employ any combination of these models, either individually or collectively through a VotingRegressor.
 						</p>
 					</div>
 				</div>
@@ -144,63 +171,35 @@ Find out More Awesome template at http://www.WpFreeware.com.
 						<img src="images/recent1.jpg" alt=""/>
 						<div class="blog_post_meta">
 							<h3>Research Question</h3>
-							<p> What are the effects of decision-making speed and risk tolerance on the stock trading strategies of two agents: one who prioritizes cautious, slow decision-making and minimizes stock sales during low-risk periods, versus another who opts for rapid transactions and liquidates all holdings in response to expected negative returns? </p>
+							<p> How effectively can different predictive models forecast next-day stock prices using historical stock data, considering factors such as price fluctuations, trends, seasonality, and market events?</p>
 						</div>
 					</div>
 					<div class="fix single_blog_post floatleft">
 						<img src="images/recent2.png" alt=""/>
 						<div class="blog_post_meta">
-							<h3>Agents</h3>
-							<p>Agent-based modelling (ABM) in stock markets is a computational approach that simulates the interactions of individual agents (traders) to understand complex market dynamics. Key features of our ABM in this project include: heterogeneity, adaptation, firm based wait time, firm based expected return thresholds, weighted buy-sell transactions.</p>
+							<h3>Models</h3>
+							<p>Key features of these five models include the ability to handle trends, seasonality, and non-linear relationships in time series data. They can capture both short-term fluctuations and long-term dependencies, with some models offering robustness to missing data and outliers. Additionally, they can provide insights into feature importance and handle complex patterns, though some require large datasets and careful tuning to avoid overfitting.</p>
 						</div>
 					</div>
 					<div class="fix single_blog_post floatleft">
 						<img src="images/recent33.jpg" alt=""/>
 						<div class="blog_post_meta">
 							<h3>Data Collection</h3>
-							<p>To gather stock data, we utilized Yahoo Finance for ten different stock symbols through Python. Following the download of historical market data, we calculated short-term and long-term moving averages to inform the agents' decision-making processes regarding buy or sell signals.</p>
+							<p>To gather stock data, we utilized Yahoo Finance for ten different stock symbols through Python. Following the download of historical market data, we divided the data into training and testing sets, then transformed it into appropriate formats for each model to ensure proper fitting and prediction. Model performance was evaluated using four key error metrics: MAE, MSE, RMSE, and MAPE.</p>
 						</div>
 					</div>
 					<div class="fix single_blog_post floatleft">
-						<img src="images/recent4.png" alt=""/>
+						<img src="images/mae_error.png" alt=""/>
 						<div class="blog_post_meta">
-							<h3>Analysis</h3>
-							<p>We optimized expected return thresholds through several methods: first, by applying a consistent unique constant across all symbols; second, by deriving firm-specific values directly from the data.
-							Lastly, we combined these scores after normalizing the data into a formula, represented as  𝑎∗𝑥+𝑏 to enhance decision-making processes. Solved the equation to maximize the agents final portfolio values.</p>
+							<h3>Error Metrics</h3>
+							<p>Mean Absolute Error (MAE): The average of the absolute differences between the predicted and actual values.</p>
+							<p>Mean Squared Error (MSE): The average of the squared differences between the predicted and actual values.</p>
+							<p>Root Mean Squared Error (RMSE): The square root of the MSE, which gives a more interpretable error metric by bringing it back to the original units of the data.</p>
+							<p>Mean Absolute Percentage Error (MAPE): The percentage difference between the predicted and actual values.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="fix from_works">
-				<h2><span>Flexible Agents</span></h2>
-				<div class="fix single_work_container">
-					<div class="fix single_work floatleft">
-						<img src="images/recent44.jpg" alt=""/>
-						<div class="blog_post_meta">
-							<h3>Challenges</h3>
-							<p>Adaptive agents do not have restrictions on the number of transactions they can execute. Additionally, there is no minimum threshold for buy and sell operations. This lack of limitations can lead to suboptimal strategies for human investors, as executing transactions in small quantities may not be ideal in a context where each transaction incurs costs.</p>
-						</div>
-					</div>
-					<div class="fix single_work floatleft">
-						<img src="images/recent55.jpg" alt=""/>
-						<div class="blog_post_meta">
-							<h3>Flexible Agents</h3>
-							<p>Flexible agents employ a maximum of three distinct buy operations per day, targeting firms with the highest expected returns. Flexible agents retain all the essential characteristics of the earlier adaptive agents.</p>
-						</div>
-					</div>
-					<div class="fix single_work floatleft">
-						<img src="images/recent66.jpg" alt=""/>
-						<div class="blog_post_meta">
-							<h3>Results</h3>
-							<p>The maximum final portfolio values for a $10,000 investment over 3 years were $28,555 for the slow agent and $41,750 for the fast agent, resulting in a performance improvement of approximately 46.2% for the fast agent. When comparing Adaptive and Flexible agents, it is evident that both achieved similar outcomes. Notably, the Flexible Slow Agent delivered superior results with fewer transactions. A similar grid search approach could be employed to identify the optimal final portfolio value for the equation  𝑎∗𝑥+𝑏
-									.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-
 		
 		<div class="fix footer_area">
 			<div class="fix footer">
@@ -247,6 +246,7 @@ Find out More Awesome template at http://www.WpFreeware.com.
             });
         </script>
 		
+
 		<!-- Responsive navigation-->
 		<script type="text/javascript" src="js/selectnav.min.js"></script>
 		<script type="text/javascript">
